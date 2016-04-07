@@ -54,7 +54,7 @@
                                 </div>
                                 <script type="text/javascript">
 					$('.oe_secondary_menu_section').click(function() {
-					    $(this).next().slideToggle(500);
+					    $(this).next().slideToggle(50);
 					});
 				    </script>
                             </td>
@@ -65,7 +65,7 @@
             </t>
         </template>
         
-<template id="web.menu_secondary_submenu">
+	<template id="web.menu_secondary_submenu">
             <ul t-if="menu['children']" class="oe_secondary_submenu nav nav-pills nav-stacked" style="display:none;">
                 <li t-foreach="menu['children']" t-as="menu">
                     <t t-call="web.menu_link"/>
